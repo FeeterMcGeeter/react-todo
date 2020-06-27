@@ -1,0 +1,60 @@
+.todo {
+
+    // Input & Add Item Btn
+    &__form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        font-size: 1.6rem;
+        color: $color-light;
+        background-color: $color-primary;
+        width: 40rem;
+        height: 4rem;
+        border: none;
+        border-radius: 10rem;
+        outline: none;
+        padding-left: 1rem;
+        margin-right: 1.5rem;
+        box-shadow: 
+            inset .4rem .4rem .3rem #22283A,
+            inset -.4rem -.4rem .3rem #2E364E;
+
+        &::-webkit-input-placeholder {
+            color: rgba($color-light, .7);
+        }
+    }
+
+    &__add-btn {
+        font-size: 1.6rem;
+        color: $color-secondary;
+        background-color: $color-primary;
+        height: 4rem;
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 10rem;
+        cursor: pointer;
+        box-shadow: 
+            .4rem .4rem .3rem #22283A,
+            -.4rem -.4rem .3rem #2E364E;
+    }
+
+    // To Do List & Delete Item Btn
+    &__list {
+
+    }
+
+    &__item {
+
+    }
+
+    &__icon {
+
+    }
+
+    &__delete-btn {
+
+    }
+}
