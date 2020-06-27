@@ -116,25 +116,27 @@ class App extends Component {
                     </button>
                 </div>
 
-                <ul className='todo__list'>
-                    {this.state.toDoList.map((item) => {
-                        return (
-                            <li key={item.id} className='todo__item'>
-                                {item.value}
-                                <button
-                                    className='todo__delete-btn'
-                                    onClick={() => this.deleteItem(item.id)}
-                                >
-                                    <FaTrashAlt className='todo__icon' />
-                                </button>
-                            </li>
-                        );
-                    })}
-                </ul>
+                <div className="todo__list-container">
+                    <ul className='todo__list'>
+                        {this.state.toDoList.map((item) => {
+                            return (
+                                <li key={item.id} className='todo__item'>
+                                    {item.value}
+                                    <span>
+                                        <FaTrashAlt
+                                            className='todo__delete-btn'
+                                            onClick={() => this.deleteItem(item.id)}
+                                        />
+                                    </span>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
         );
-    };
-};
+    }
+}
 
 export default App;
 
